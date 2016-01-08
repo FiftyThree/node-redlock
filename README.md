@@ -46,6 +46,9 @@ var redlock = new Redlock(
 
 		// the time in ms between attempts
 		retryDelay:  200
+
+		// the max time in ms for random jitter added to the retryDelay (defaults to 0)
+		retryJitter: 200
 	}
 );
 ```
